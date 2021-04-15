@@ -1,3 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.dropdown-menu {
+  opacity: 0;
+  display: none;
+  transform: translateY(10px);
+  transition: transform 0.2s ease-in-out, opacity 0.1s ease-out,
+    display 0.1s ease-out;
+}
+
+.dropdown .dropdown-button:focus + .dropdown-menu,
+.dropdown:hover .dropdown-menu,
+.dropdown-menu:focus-within {
+  opacity: 1;
+  display: block;
+  transform: translateY(0);
+  height: auto;
+  z-index: 1;
+}

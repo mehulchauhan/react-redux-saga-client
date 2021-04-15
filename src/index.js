@@ -33,8 +33,10 @@ serviceWorkerRegistration.unregister();
 reportWebVitals();
 
 // Hot reloading
+// @ts-ignore
 if (module.hot) {
   // Reload components
+  // @ts-ignore
   module.hot.accept("./App", () => {
     render();
   });
