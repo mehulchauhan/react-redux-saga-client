@@ -115,12 +115,12 @@ const NavBar = (props) => {
                 </NavLink>
 
                 <NavLink
-                  to="/hello"
+                  to="/translate"
                   onClick={() => setMenuOpen(false)}
                   activeClassName={styles.menu.item.active}
                   className={styles.menu.item.inactive}
                 >
-                  Hello
+                  Translate
                 </NavLink>
               </div>
             </div>

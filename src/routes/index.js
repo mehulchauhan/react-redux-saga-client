@@ -2,7 +2,7 @@ import React from "react";
 import { Route, Switch } from "react-router";
 
 import Home from "../container/Home";
-import Hello from "../container/Hello";
+import Translate from "../container/Translate";
 import Counter from "../container/Counter";
 import NoMatch from "../container/NoMatch";
 import Profile from "../container/user/Profile";
@@ -16,7 +16,7 @@ const routes = () => {
       <NavBar />
       <Switch>
         <Route exact path="/" component={Home} />
-        <Route path="/hello" component={Hello} />
+        <Route path="/translate" component={Translate} />
         <Route path="/counter" component={Counter} />
         <Route path="/user/profile" component={Profile} />
         <Route path="/user/settings" component={Settings} />
